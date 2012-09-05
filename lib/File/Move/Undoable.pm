@@ -10,7 +10,7 @@ use File::Trash::Undoable;
 use SHARYANTO::File::Util qw(file_exists l_abs_path);
 use SHARYANTO::Proc::ChildError qw(explain_child_error);
 
-our $VERSION = '0.01'; # VERSION
+our $VERSION = '0.02'; # VERSION
 
 our %SPEC;
 
@@ -173,7 +173,7 @@ File::Move::Undoable - Move file/directory using rename/rsync, with undo support
 
 =head1 VERSION
 
-version 0.01
+version 0.02
 
 =head1 FAQ
 

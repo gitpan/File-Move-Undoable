@@ -8,6 +8,7 @@ use Module::Build 0.3601;
 my %module_build_args = (
   "build_requires" => {
     "File::Slurp" => 0,
+    "File::Which" => 0,
     "File::chdir" => 0,
     "Module::Build" => "0.3601",
     "Test::More" => "0.98",
@@ -21,7 +22,7 @@ my %module_build_args = (
     "Steven Haryanto <stevenharyanto\@gmail.com>"
   ],
   "dist_name" => "File-Move-Undoable",
-  "dist_version" => "0.01",
+  "dist_version" => "0.02",
   "license" => "perl",
   "module_name" => "File::Move::Undoable",
   "recommends" => {},

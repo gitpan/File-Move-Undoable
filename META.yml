@@ -4,6 +4,7 @@ author:
   - 'Steven Haryanto <stevenharyanto@gmail.com>'
 build_requires:
   File::Slurp: 0
+  File::Which: 0
   File::chdir: 0
   Module::Build: 0.3601
   Test::More: 0.98
@@ -30,4 +31,4 @@ requires:
 resources:
   homepage: http://metacpan.org/release/File-Move-Undoable
   repository: http://github.com/sharyanto/perl-File-Move-Undoable
-version: 0.01
+version: 0.02

@@ -3,7 +3,7 @@ NAME
     support
 
 VERSION
-    version 0.01
+    version 0.02
 
 FAQ
   Why do you use rsync? Why not, say, File::Copy::Recursive?
