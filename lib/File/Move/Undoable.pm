@@ -1,16 +1,17 @@
 package File::Move::Undoable;
 
+our $DATE = '2014-12-05'; # DATE
+our $VERSION = '0.04'; # VERSION
+
 use 5.010001;
 use strict;
 use warnings;
 use Log::Any '$log';
 
 use Builtin::Logged qw(system);
+use File::MoreUtil qw(file_exists l_abs_path);
 use File::Trash::Undoable;
 use Proc::ChildError qw(explain_child_error);
-use SHARYANTO::File::Util qw(file_exists l_abs_path);
-
-our $VERSION = '0.03'; # VERSION
 
 our %SPEC;
 
@@ -175,7 +176,7 @@ File::Move::Undoable - Move file/directory using rename/rsync, with undo support
 
 =head1 VERSION
 
-This document describes version 0.03 of File::Move::Undoable (from Perl distribution File-Move-Undoable), released on 2014-05-17.
+This document describes version 0.04 of File::Move::Undoable (from Perl distribution File-Move-Undoable), released on 2014-12-05.
 
 =head1 FUNCTIONS
 
@@ -264,6 +265,8 @@ First element (status) is an integer containing HTTP status code
 element (meta) is called result metadata and is optional, a hash
 that contains extra information.
 
+ (any)
+
 =head1 FAQ
 
 =head2 Why do you use rsync? Why not, say, File::Copy::Recursive?
@@ -285,7 +288,7 @@ Please visit the project's homepage at L<https://metacpan.org/release/File-Move-
 
 =head1 SOURCE
 
-Source repository is at L<https://github.com/sharyanto/perl-File-Move-Undoable>.
+Source repository is at L<https://github.com/perlancar/perl-File-Move-Undoable>.
 
 =head1 BUGS
 
@@ -297,11 +300,11 @@ feature.
 
 =head1 AUTHOR
 
-Steven Haryanto <stevenharyanto@gmail.com>
+perlancar <perlancar@cpan.org>
 
 =head1 COPYRIGHT AND LICENSE
 
-This software is copyright (c) 2014 by Steven Haryanto.
+This software is copyright (c) 2014 by perlancar@cpan.org.
 
 This is free software; you can redistribute it and/or modify it under
 the same terms as the Perl 5 programming language system itself.
